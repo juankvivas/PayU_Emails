@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    
+    <script language="javascript"> 
+     var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+              if (mobile) {
+                  
+                  var userAgent = navigator.userAgent.toLowerCase();
+                  if ((userAgent.search("android") > -1) && (userAgent.search("mobile") > -1)){
+                         //document.write("<b> ANDROID MOBILE <br>");
+                         window.location.href = "https://play.google.com/store/apps/details?id=com.payulatam.biz.merchantapp&hl=es_CO";
+                   }else if ((userAgent.search("android") > -1) && !(userAgent.search("mobile") > -1)){
+                       //document.write("<b> ANDROID TABLET <br>");
+                       window.location.href = "https://play.google.com/store/apps/details?id=com.payulatam.biz.merchantapp&hl=es_CO";
+                   }else if ((userAgent.search("blackberry") > -1)){
+                       //document.write("<b> BLACKBERRY DEVICE <br>")
+                        window.location.href = "https://play.google.com/store/apps/details?id=com.payulatam.biz.merchantapp&hl=es_CO";
+                   }else if ((userAgent.search("iphone") > -1)){
+                       //document.write("<b> IPHONE DEVICE <br>");
+                       window.location.href = "https://itunes.apple.com/co/app/payu-biz/id1103984590?mt=8";
+                   }else if ((userAgent.search("ipod") > -1)){
+                       //document.write("<b> IPOD DEVICE <br>");
+                       window.location.href = "https://itunes.apple.com/co/app/payu-biz/id1103984590?mt=8";
+                    }else if ((userAgent.search("ipad") > -1)){
+                       //document.write("<b> IPAD DEVICE <br>");
+                       window.location.href = "https://itunes.apple.com/co/app/payu-biz/id1103984590?mt=8";
+                   }else{
+                        //document.write("<b> UNKNOWN DEVICE <br>")
+                        window.location.href = "https://play.google.com/store/apps/details?id=com.payulatam.biz.merchantapp&hl=es_CO";
+                       }
+              }
+              else{
+                  //alert("NO MOBILE DEVICE DETECTED"); //--> 
+                  window.location.href = "https://play.google.com/store/apps/details?id=com.payulatam.biz.merchantapp&hl=es_CO";
+              }
+    </script>
+</html>
+
+
+ 
